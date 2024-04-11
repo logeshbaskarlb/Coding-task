@@ -1,4 +1,4 @@
-function isPalindrome(str) {
+function reversedString(str) {
     for(let i =0; i < str.length; i++){
         if(str[i] !== str[str.length - 1 - i] ){
             return false
@@ -7,5 +7,5 @@ function isPalindrome(str) {
     return true
 }
 
-console.log(isPalindrome("awesome"));
-console.log(isPalindrome("racecar"));
+console.log(reversedString("awesome"));
+console.log(reversedString("racecar"));
