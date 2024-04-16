@@ -1,0 +1,60 @@
+Big O Notation:
+
+Big O notation is a mathematical notation used in computer science to describe the complexity or efficiency of an algorithm in terms of how its runtime or space requirements grow as the input size increases. It provides a way to analyze and compare the performance of algorithms without being concerned with the specific details of implementation or hardware.
+
+In Big O notation:
+
+O(1) (Constant time): Describes algorithms with constant runtime,
+                     meaning their performance does not change with
+                    the size of the input. Example: accessing an 
+                    element in an array by index.
+
+O(log n) (Logarithmic time): Describes algorithms where the runtime 
+                    grows logarithmically relative to the size of 
+                    the input. Example: binary search on a sorted array.
+
+O(n) (Linear time): Describes algorithms where the runtime is directly 
+                    proportional to the size of the input. 
+                    Example: linear search through an array.
+
+O(n log n) (Linearithmic time): Describes algorithms that combine 
+                    linear and logarithmic behavior. 
+                    Example: efficient sorting algorithms like 
+                    merge sort and quicksort.
+
+O(n^2) (Quadratic time): Describes algorithms where the 
+                    runtime grows quadratically with the size of 
+                    the input. Example: simple nested loops that 
+                    iterate over all pairs of elements.
+
+O(2^n) (Exponential time): Describes algorithms where the runtime 
+                    doubles with each additional element in the input.
+                    Example: exhaustive search or certain recursive algorithms.
+
+O(n!) (Factorial time): Describes algorithms where the runtime grows 
+                    extremely fast with the size of the input. 
+                    Example: brute-force solution to the traveling 
+                    salesman problem.
+
+Time Complexity Analysis:
+
+Linear Search:
+
+Time Complexity: O(n)
+Explanation: In a linear search, each element of the array is 
+examined at most once until either the target element is found or the 
+end of the array is reached. Therefore, the time complexity of linear 
+search is directly proportional to the size of the input array (n),
+where n is the number of elements in the array. In the worst case, 
+the target may be at the end of the array or not present at all, 
+resulting in n comparisons.
+Binary Search:
+
+Time Complexity: O(log n)
+Explanation: Binary search operates by repeatedly dividing the search 
+interval in half based on a comparison with the middle element of the 
+array. This logarithmic behavior means that with each step, the search 
+space is reduced by half. Therefore, the time complexity of binary 
+search is logarithmic (log n) relative to the size of the input array 
+(n). In the worst case, binary search requires log n comparisons to 
+find the target element.
