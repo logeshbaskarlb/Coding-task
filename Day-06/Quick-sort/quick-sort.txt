@@ -1,0 +1,14 @@
+Steps of Quick Sort:
+
+Choose a Pivot: Select an element from the array as the pivot. The choice of pivot can significantly affect the performance of the algorithm. Common choices include the first element, last element, middle element, or a randomly chosen element.
+Partitioning: Rearrange the array so that all elements less than the pivot are placed before it, and all elements greater than the pivot are placed after it. After partitioning, the pivot is in its final sorted position.
+Recursively Apply: Recursively apply quick sort to the sub-arrays of elements with smaller values and larger values separately.
+
+
+Time Complexity:
+
+Average Time Complexity: O(n log n)
+Worst-case Time Complexity: O(n^2) (Occurs when the pivot is consistently the smallest or largest element)
+Space Complexity:
+
+Space Complexity: O(log n) for the recursive call stack (in-place quick sort variants can achieve O(1) space complexity)

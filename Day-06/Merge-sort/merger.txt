@@ -1,0 +1,15 @@
+
+
+
+Concept of Merge Sort:
+
+Divide: Split the array into two halves.
+Conquer: Recursively sort each half.
+Combine: Merge the sorted halves back together to produce the final sorted array.
+
+Time Complexity:
+
+Merge sort has a time complexity of O(n log n) in all cases, where n is the number of elements in the array. This makes merge sort one of the most efficient sorting algorithms, suitable for large datasets.
+Space Complexity:
+
+Merge sort typically requires additional space proportional to the size of the input array due to the need for auxiliary arrays during the merge process. The space complexity is O(n) in the worst case.
