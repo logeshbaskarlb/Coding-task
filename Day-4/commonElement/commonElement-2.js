@@ -3,8 +3,11 @@
 function findCommonElement (arr1, arr2) {
     
     const set = new Set(arr1);
-    return arr2.filter((item) => set.has(item))
+    const commonElements = arr2.filter((item) => set.has(item))
 
+    const uniqueCommonElements = [...new Set(commonElements)];
+
+    return uniqueCommonElements;
 }
 
 
