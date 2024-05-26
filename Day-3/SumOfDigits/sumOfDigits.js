@@ -1,21 +1,14 @@
 
 
-function sumOfDigitsRecursive(n) {
-
-    if(n == 0) return 0;
+function sumOfDigits(n) {
     
-    const lastDigit = n % 10
-
-    const remainingDigits = Math.floor(n / 10)
-    const sumOfRemainingDigits = sumOfDigitsRecursive(remainingDigits)
-
-    const sum = lastDigit + sumOfRemainingDigits
-
-    return sum
+ if (num < 10) return num;
+    let temp = num%10
+    return temp + sumOfDigits((num-temp) / 10);
 
 }
 
 
-const number = 12345;
-const sumOfDigits = sumOfDigitsRecursive(number);
-console.log(`The sum of digits of ${number} is:`, sumOfDigits);
+console.log(sumOfDigits(123)); // 6
+console.log(sumOfDigits(456)); // 15
+console.log(sumOfDigits(789)); // 24
