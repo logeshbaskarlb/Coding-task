@@ -4,13 +4,13 @@ const numbers = [10, 5, 20, 8, 15];
 function findsecondLargestNumber(arr) {
     if(arr.length < 2) return undefined;
 
-    let count =0 
+   
 
     let largestNumber = -Infinity;
     let SecondLargestNum = -Infinity
 
     for (let num of arr){
-        count++;
+      
         if(num > largestNumber){
             SecondLargestNum = largestNumber
             largestNumber = num
